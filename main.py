@@ -1,10 +1,12 @@
 print(len(str(1000)))
 
-print(str(2+2)),print(str(2-2))
+a=10
+b=9
+print(str(a+b)),print(str(a-b))
 
-numbers = [5, 8, 10, 4, 7]
-a = sum(numbers) / len(numbers)
-print(a)
+a = [5, 8, 10,]
+f= sum(a) / len(a)
+print(f)
 
 a='Понедельник'
 b='Вторник'
@@ -14,6 +16,6 @@ print(a,c,b)
 a=1
 b=2
 c=3
-d=(a * b) + (a * c)
-f=d**3/2
+f=(a * b) + (a * c)
+f=f**3/2
 print(f)
