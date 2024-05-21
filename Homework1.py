@@ -8,4 +8,4 @@ print(example[5:])
 
 print(example[::-1])
 
-print('а'+'и'+'а'+'ы')
+print(example[1:8:2])
