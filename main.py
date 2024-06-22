@@ -1,21 +1,11 @@
-print(len(str(1000)))
+import true_math as tm
+import fake_math as fm
 
-a=10
-b=9
-print(str(a+b)),print(str(a-b))
-
-a = [5, 8, 10,]
-f= sum(a) / len(a)
-print(f)
-
-a='Понедельник'
-b='Вторник'
-c= ','
-print(a,c,b)
-
-a=1
-b=2
-c=3
-f=(a * b) + (a * c)
-f=f**3/2
-print(f)
+result1 = tm.divide2(10, 0)
+result2 = tm.divide2(12, 6)
+result3 = fm.divide1(15, 0)
+result4 = fm.divide1(16, 2)
+print(result1)
+print(result2)
+print(result3)
+print(result4)
