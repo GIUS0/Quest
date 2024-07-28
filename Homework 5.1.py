@@ -3,6 +3,7 @@ class House:
         self.name = name
         self.number_of_floors =  number_of_floors
 
+
     def go_to(self, new_floor):
         for i in range(1, new_floor + 1):
             if 1 <= new_floor <= self.number_of_floors:
@@ -12,9 +13,17 @@ class House:
                 break
 
     def __str__(self):
-        return self.name 
+        return self.name
 
     def __len__(self):
+        return self.number_of_floors
+    def __eq__(self, other):
+        return self.number_of_floors == other
+    def __gt__(self, other):
+        return self.number_of_floors < other
+    def __add__ (self, value) :
+        return  (self.number_of_floors+value)
+    def __radd__(self, value):
         return self.number_of_floors
 
 
@@ -32,3 +41,10 @@ print(len(h2))
 
 print(h1)
 print(h2)
+
+print(h1==h2)
+print(h1 < h2)
+value = 20
+print(h1+ value)
+
+
